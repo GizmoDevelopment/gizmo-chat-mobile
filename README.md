@@ -1,1 +1,1 @@
-# gizmo-chat-mobile
+# Gizmo Chat Mobile
