@@ -8,7 +8,10 @@ import { registerRootComponent } from "expo";
 import { Component } from "react";
 import { AppRegistry, SafeAreaView, View, StyleSheet, ScrollView } from "react-native";
 import { Provider, connect } from "react-redux";
+
+// Screens
 import Chat from "./components/Chat";
+import Start from "./components/Start";
 
 // Stores
 import AppStore from "./states/AppStore";
@@ -61,11 +64,13 @@ class App extends Component {
     });
   }
 
+  // <Chat handleSubmitMessage = { this.handleSubmitMessage }/>
+
   render () {
     return (
       <Provider store = { AppStore }>
         <SafeAreaView style = { styles.background }>
-          <Chat handleSubmitMessage = { this.handleSubmitMessage }/>
+          <Start />
         </SafeAreaView>
       </Provider>
     );
